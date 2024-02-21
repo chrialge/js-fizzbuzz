@@ -15,13 +15,13 @@ for (let i = 1; i <= 100; i++){
     */
     if (i% 3 === 0) {
         console.log(fizz);
-        containerSquare.insertAdjacentHTML('beforeend', `<li>${fizz}</li>`)
+        containerSquare.insertAdjacentHTML('beforeend', `<li class="box fizz_bg">${fizz}</li>`)
     } else if (i%5 ===0){
        console.log(buzz); 
-       containerSquare.insertAdjacentHTML('beforeend', `<li>${buzz}</li>`)
+       containerSquare.insertAdjacentHTML('beforeend', `<li class="box buzz_bg">${buzz}</li>`)
     }else{
         console.log(i)
-        containerSquare.insertAdjacentHTML('beforeend', `<li>${i}</li>`)
+        containerSquare.insertAdjacentHTML('beforeend', `<li class="box bg_secondary">${i}</li>`)
     }
 
 }
