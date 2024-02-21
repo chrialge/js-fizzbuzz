@@ -2,7 +2,6 @@ console.log("hello");
 
 // dichiaro la variabile dove includo container_square(controllino con console.log)
 const containerSquare = document.getElementById("container_square");
-console.log(containerSquare)
 // crea tre variabili con il contenuto dei tre riquadri non numerati
 const fizz = "fizz";
 const buzz = "buzz";
