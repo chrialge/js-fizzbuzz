@@ -1,3 +1,36 @@
+/* region common */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: green;
+    font-family: "Roboto", sans-serif;
+}
+/* endregion common */
+
+.container{
+    max-width: 1400px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    & h1{
+        color: white;
+        font-size: 50px;
+    }
+    & ul{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        & .box{
+            width: calc((100% / 12) * 2);
+            aspect-ratio: 1;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }

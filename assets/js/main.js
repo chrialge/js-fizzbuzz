@@ -6,16 +6,22 @@ console.log(containerSquare)
 let fizz = "fizz";
 let buzz = "buzz";
 
+// crea un ciclo per creare una serie di riquadri
 for (let i = 1; i <= 100; i++){
     console.log(i)
     
+    /* 
+    crea delle condizioni in cui se e divisibile per 3(fizz) per 5(buzz) il resto numeri a pregressione
+    */
     if (i% 3 === 0) {
         console.log(fizz);
+        containerSquare.insertAdjacentHTML('beforeend', `<li>${fizz}</li>`)
     } else if (i%5 ===0){
        console.log(buzz); 
+       containerSquare.insertAdjacentHTML('beforeend', `<li>${buzz}</li>`)
     }else{
         console.log(i)
+        containerSquare.insertAdjacentHTML('beforeend', `<li>${i}</li>`)
     }
 
-    containerSquare.insertAdjacentHTML('beforeend', `<li>${i}</li>`)
 }
