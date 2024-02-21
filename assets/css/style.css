@@ -2,9 +2,10 @@
 :root{
     --fizzbuzzdom-bg-primary: #083b4c;
     --fizzbuzzdom-bg-secondary: #1389b2;
-    --fizzbuzzdom-bg-fizz: #0cd6a1;
-    --fizzbuzzdom-bg-buzz: #ffd166;
+    --fizzbuzzdom-bg-buzz: #0cd6a1;
+    --fizzbuzzdom-bg-fizz: #ffd166;
     --fizzbuzzdom-bg-lighter: #ffffff;
+    --fizzbuzzdom-bg-fizzbuzz: #f0466f;
 
 
 
@@ -16,7 +17,7 @@
 }
 
 body{
-    background-color: green;
+    background-color: var(--fizzbuzzdom-bg-primary);
     font-family: "Roboto", sans-serif;
 }
 /* endregion common */
@@ -38,13 +39,26 @@ body{
         & .box{
             width: calc(((100% / 12) * 2) - 20px);
             aspect-ratio: 1;
-            background-color: red;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 10px;
 
         
+        }
+
+        & .bg_secondary{
+            background-color: var(--fizzbuzzdom-bg-secondary);
+        }
+
+        & .fizz_bg{
+            background-color: var(--fizzbuzzdom-bg-fizz);
+        }
+        & .buzz_bg{
+            background-color: var(--fizzbuzzdom-bg-buzz);
+        }
+        & .fizzbuzz_bg{
+            background-color: var(--fizzbuzzdom-bg-fizzbuzz);
         }
     }
 }
